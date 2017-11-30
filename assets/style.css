@@ -1,0 +1,311 @@
+/* Personnalisation de la NavBar */
+
+nav img {
+	width: 50px;
+}
+
+.logo {
+	width: 80px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;	
+}
+
+nav li {
+    float: left;	
+}
+
+.search {
+	height: 22px;
+	width: 8%;
+	margin-left: 370px;
+	margin-top: 40px;
+	padding-right: 400px;
+}
+
+.bouton {
+	height: 28px;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 50px;
+    text-decoration: none;
+	vertical-align: middle;
+}
+
+.image {
+  top: 15px;
+  position: relative;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.textepanier, .texteapropos {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.textepanier {
+	right: -1.5%;	
+}
+
+.texteapropos {
+	right: 2.8%;	
+}
+
+.box:hover .image {
+  opacity: 0.3;
+}
+
+.box:hover .texteapropos {
+  opacity: 1;
+}
+
+.box:hover .textepanier {
+  opacity: 1;
+}
+
+.texte {
+  background-color: lightgray;
+  color: black	;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+/* Personnalisation de la partie "Accueil" */
+	/* Message de bienvenue */
+
+
+
+	/* Slideshow */	
+
+.css-slideshow{
+  position: relative;
+  max-width: 495px;
+  height: 370px;
+  margin: 5em auto .5em auto;
+}
+.css-slideshow figure{
+  margin: 0;
+  max-width: 495px;
+  height: 370px;
+  background: #000;
+  position: absolute;
+}
+.css-slideshow img{
+  box-shadow: 0 0 2px #666;
+}
+.css-slideshow figcaption{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: rgba(0,0,0, .3);
+  font-size: .8em;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.css-slideshow:hover figure figcaption{
+  transition: opacity .5s;
+  opacity: 1;
+}
+.css-slideshow-attr{
+  max-width: 495px;
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
+  margin:0 auto;
+}
+.css-slideshow-attr a{
+  color: #666;
+}
+.css-slideshow figure{
+  opacity:0;
+}
+figure:nth-child(1) {
+  animation: xfade 48s 42s infinite;
+}
+figure:nth-child(2) {
+  animation: xfade 48s 36s infinite;
+}
+figure:nth-child(3) {
+  animation: xfade 48s 30s infinite;
+}
+figure:nth-child(4) {
+  animation: xfade 48s 24s infinite;
+}
+figure:nth-child(5) {
+  animation: xfade 48s 18s infinite;
+}
+figure:nth-child(6) {
+  animation: xfade 48s 12s infinite;
+}
+figure:nth-child(7) {
+  animation: xfade 48s 6s infinite;
+}
+figure:nth-child(8) {
+  animation: xfade 48s 0s infinite;
+}
+
+@keyframes xfade{
+  0%{
+    opacity: 1;
+  }
+  10.5% {
+    opacity: 1;
+  }
+  12.5%{
+    opacity: 0;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Personnalisation de la partie "Recherche" */
+
+#recherche img {
+	width: 20%;
+}
+
+#recherche strong {
+	color: orange;
+}
+
+#recherche a {
+	text-decoration: none;
+	color: #007FFF;
+}
+
+#article1 {
+	border-top: solid;
+	border-top-color: #DCDCDC;
+	border-bottom: solid;
+	border-bottom-color: #DCDCDC;
+    overflow: hidden; /* empêche le dépassement des flottants */
+}
+
+#article1 .illus-gauche {
+    float: left;
+    margin: 5px 20px 5px 0;
+}
+
+#article1 p {
+    overflow: hidden; /* Contexte de formatage. Force le paragraphe à
+    adapter sa largeur aux flottants adjacents. */
+}
+
+#article2 {
+	border-bottom: solid;
+	border-bottom-color: #DCDCDC;
+    overflow: hidden; /* empêche le dépassement des flottants */
+}
+
+#article2 .illus-gauche {
+    float: left;
+    margin: 5px 20px 5px 0;
+}
+
+#article2 p {
+    overflow: hidden; /* Contexte de formatage. Force le paragraphe à
+    adapter sa largeur aux flottants adjacents. */
+}
+
+#article3 {
+	border-bottom: solid;
+	border-bottom-color: #DCDCDC;
+    overflow: hidden; /* empêche le dépassement des flottants */
+}
+
+#article3 .illus-gauche {
+    float: left;
+    margin: 5px 20px 5px 0;
+}
+
+#article3 p {
+    overflow: hidden; /* Contexte de formatage. Force le paragraphe à
+    adapter sa largeur aux flottants adjacents. */
+}
+
+#article4 {
+	border-bottom: solid;
+	border-bottom-color: #DCDCDC;
+    overflow: hidden; /* empêche le dépassement des flottants */
+    margin-bottom: 0;
+}
+
+#article4 .illus-gauche {
+    float: left;
+    margin: 5px 20px 5px 0;
+}
+
+#article4 p {
+    overflow: hidden; /* Contexte de formatage. Force le paragraphe à
+    adapter sa largeur aux flottants adjacents. */
+}
+
+
+
+
+
+
+
+/* Personnalisation de la partie "Article" */
+
+#prems-partie-article img {
+	float: left;
+	margin: 5px 20px 5px 0;
+	width: 35%;
+}
+
+#Description {
+	overflow: hidden;
+	width: 40%;
+}
+
+aside {
+	float: right;
+	border-style: solid;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+
+
+
+/* Personnalisation de la partie "QuiSommesNous?" */
+/* Personnalisation de la partie "Commandes" */
+/* FOOTER */
+
+footer {
+	color:white;
+	background-color: lightgray;
+	margin-top: 0;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
